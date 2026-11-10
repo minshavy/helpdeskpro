@@ -1,0 +1,25 @@
+# Live credentials never belong in the repository.
+# config/db.php is committed with XAMPP defaults so the project runs after a
+# clone. If you point it at a real server, copy it aside first:
+#   cp config/db.php config/db.local.php
+# and keep your real values in the ignored file below.
+config/db.local.php
+config/mail.local.php
+
+# Uploaded ticket attachments
+uploads/*
+!uploads/.gitkeep
+
+# Local database dumps and backups
+backup_*.sql
+*.sql.gz
+
+# Editor and OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log
